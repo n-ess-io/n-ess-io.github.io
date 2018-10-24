@@ -1,0 +1,46 @@
+body {
+    background-color: #313a5a;
+}
+
+.wrapper {
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 160px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    max-width: 560px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #313a5a;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+
+@media only screen and (max-width: 768px) {
+  
+.wrapper {
+
+   
+}
+
+.logo {
+    width: 320px;
+}
+
+}
