@@ -14,7 +14,6 @@
 
 #particles-js-post {
     width: 100%;
-    height: auto;
     background-color: transparent;
     -webkit-animation: changeColors 30s ease infinite;
     -moz-animation: changeColors 30s ease infinite;
@@ -23,7 +22,6 @@
     display: block;
     position: relative;
     z-index: 10;
-    min-height: 450px;
 }
 
 
@@ -641,8 +639,7 @@ header i {
    
     
     .hero-post .title {
-        position: absolute;
-        z-index: 1000;
+
         text-align: center;
     }
     
@@ -669,7 +666,10 @@ header i {
         width: 100%;
     }
     
-    .hero-post .blue-box {
+   
+    
+
+    .blog-content-list .blue-box {
         position: relative;
         bottom: -40px;
         background-color: #10d775;
@@ -677,10 +677,8 @@ header i {
         font-size: 18px;
         width: 100%;
         right: 0px;
+        color: #FFF;
     }
-    
-
-
 
     .blog-content-list {
         padding: 20px 0 80px 0px;
@@ -726,7 +724,8 @@ header i {
         background-color: #10d775;
         padding: 30px;
         font-size: 18px;
-        width: 40%;
+        width: 100%;
+        z-index: 1000;
         left: 0px;
     }
     
