@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Bootstrap -->
+    <script src="/ness/js/modernizr.custom.js"></script>
+    <link href="/ness/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/ness/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="/ness/css/flickity.css" rel="stylesheet">
+    <link href="/ness/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i" rel="stylesheet">
+    <link href="/ness/css/styles.css" rel="stylesheet">
+    <link href="/ness/css/queries.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond./ness/js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+    <!-- open/close -->
+
+
+    <section class="hero-post">
+        <div id="particles-js-post"></div>
+        <div class="wrapper-big">
+            <div class="container">
+                <div class="nav-wrapper clearfix">
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <a href="/" class="site-link"><img src="/ness/img/logo.png" class="logo"></a>
+                            <a id="trigger-overlay" class="nav_slide_button nav-toggle" href="index.html#"><span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row hero-content">
+                <div class="container">
+                    <div class="row">
+
+
+                        <div class="clearfix"></div>
+                        <div class="col-md-8 col-sm-offset-2">
+                            <div class="title">
+                                <h1 class="animated fadeInDown">{{ page.title }}</h1>
+                                <p>{{ page.categories }}</p>
+
+                                <div class="blue-box">
+                                    {{ page.introduction }}
+                                </div>
+                
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="main"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="blog-content-list" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-offset-2 features-title wp1">
+                    <p>{{ content }}</p>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisi, vulputate ac
+                        ullamcorper et, facilisis
+                        nec risus. In quis neque vel massa iaculis bibendum sit amet mattis tortor. Suspendisse
+                        ultricies arcu odio, quis
+                        auctor dolor iaculis et. Morbi venenatis facilisis fermentum.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="overlay overlay-boxify">
+        <div class="container">
+            <div class="col-md-6 col-md-offset-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisi, vulputate ac ullamcorper
+                    et, facilisis
+                    nec risus. In quis neque vel massa iaculis bibendum sit amet mattis tortor. Suspendisse ultricies
+                    arcu odio, quis
+                    auctor dolor iaculis et. Morbi venenatis facilisis fermentum.</p>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/ness/js/min/toucheffects-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/ness/js/flickity.pkgd.min.js"></script>
+    <script src="/ness/js/jquery.fancybox.pack.js"></script>
+    <script src="/ness/js/waypoints.min.js"></script>
+    <script src="/ness/js/bootstrap.min.js"></script>
+    <script src="/ness/js/min/scripts-min.js"></script>
+    <script type="text/javascript" src="/ness/js/jquery.jigowatt.js"></script><!-- AJAX Form Submit -->
+    <script src="/ness/js/particles.min.js"></script>
+
+
+    <script>
+        particlesJS("particles-js-post", {
+            "particles": {
+                "number": {
+                    "value": 200,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                },
+                "opacity": {
+                    "value": 0,
+                    "random": false
+                },
+                "size": {
+                    "value": 2,
+                    "random": false,
+                    "anim": {
+                        "enable": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "opacity": 0.2
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "bubble"
+                    },
+                    "onclick": {
+                        "enable": false
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "bubble": {
+                        "distance": 200,
+                        "size": 2,
+                        "duration": 2,
+                        "opacity": 1,
+                        "speed": 3
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+
+
+    </script>
+</body>
+
+</html>

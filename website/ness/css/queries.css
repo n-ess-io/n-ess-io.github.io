@@ -1,0 +1,132 @@
+@media screen and (max-width:1200px){
+	.device{left:20%;top:-36px;}
+	footer li{margin-right:10%;}
+	.feature-content{width:55%;}
+}
+@media screen and (max-width:991px){
+	.feature-1,.feature-2{margin-bottom:50px;}
+	.device{
+    position: relative;
+    min-height: 100%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+	top: auto;
+	left: auto;
+	}
+	.screenshots ul li{width:50%;}
+	.screenshots-intro{padding:110px 0 100px 0;}
+	.feature-content{width:80%;}
+	.features-slider{height:100%}
+}
+@media screen and (max-width:680px){
+	.feature-content{width:60%;}
+}
+@media screen and (max-width:640px){
+	footer li{display:block;text-align:left;padding:20px 0;border-bottom:dashed 1px #c7cacc;margin-right:0!important;float:none;}
+	.overlay ul{margin-left:0px;}
+	.overlay ul li a{padding:20px 0;min-width:120px;font-size:12px;}
+}
+@media screen and (max-width:625px){
+	.hero h1{font-size:40px;margin: 60px 0 5px 50px;
+	width: 80%;
+	line-height: 50px;}
+	.hero p{font-size:20px;margin:0px;
+		line-height: 25px;
+		margin-left: 50px;
+		margin-right: 0px;
+		padding-right: 30px;
+}
+
+#particles-js {
+	display: none;
+	visibility: hidden;
+}
+
+.wrapper-big {
+	padding: 20px 0px;
+}
+.logo {
+max-width: 200px;
+margin: 0px;
+padding: 0px;
+margin-top: 0px;
+
+}
+
+.hero-content {
+margin-top: -30px;
+}
+
+.hero {
+    position: relative;
+    padding: 30px 0 30px 0;
+    min-height: 740px;
+    background: rgba(40, 70, 102, 0) url('../img/hero-01.png') no-repeat center center;
+
+
+    background-size: cover;
+	background-position: center bottom;
+    color: #fff;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 740px;
+	background-color: #172d48;
+    background: linear-gradient(45deg, #172d48, #313a5a, #626e98);
+    -webkit-transform-origin: 0;
+    color: #fff;
+
+    transform-origin: 0;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+}
+
+
+
+.hero .col-md-6 {
+	padding: 0px;
+}
+
+.hero .main-image {
+	margin-top: 20px;
+}
+
+.features-list .blue-box {
+    position: inherit;
+    bottom: 0px;
+    background-color: #10d775;
+    padding: 30px;
+    font-size: 18px;
+    width: 100%;
+    left: 0px;
+}
+
+.features-list .main-image {
+    position: relative;
+    bottom: 0px;
+    background-color: #10d775;
+    padding: 0px;
+    font-size: 18px;
+    width: 100%;
+	z-index: 100;
+    left: 0px;
+	top: -50px;
+}
+
+
+
+	.screenshots ul li{width:100%;min-height:100%;float:none;}
+	section.video i{font-size:30px;}
+	section.video h1{font-size:15px;font-weight:400;}
+	section.video{padding:40px;}
+	.feature-content{width:100%;text-align:center;margin-top:20px;}
+	.feature-icon{display:block;margin:0 auto;}
+	blockquote p{width:60%;}
+	.features-slider {padding: 11% 50px 10% 50px;}
+}
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>N E S S</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<!-- Bootstrap -->
+	<script src="/ness/js/modernizr.custom.js"></script>
+	<link href="/ness/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/ness/css/jquery.fancybox.css" rel="stylesheet">
+	<link href="/ness/css/flickity.css" rel="stylesheet">
+	<link href="/ness/css/animate.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i" rel="stylesheet">
+	<link href="/ness/css/styles.css" rel="stylesheet">
+	<link href="/ness/css/queries.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond./ness/js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+	<!-- open/close -->
+
+
+	<section class="hero">
+		<div id="particles-js"></div>
+		<div class="wrapper-big">
+		<div class="container">
+			<div class="nav-wrapper clearfix">
+				<div class="row">
+					<div class="col-sm-12">
+
+                            <a href="/" class="site-link"><img src="/ness/img/logo.png" class="logo"></a>
+                            <a id="trigger-overlay" class="nav_slide_button nav-toggle" href="index.html#"><span></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row hero-content">
+			<div class="container">
+				<div class="row">
+
+
+					<div class="clearfix"></div>
+					<div class="col-md-6">
+						<div class="title">
+							<h1 class="animated fadeInDown">Intelligenza Artificiale</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisi, vulputate ac ullamcorper et,
+								facilisis nec risus. In quis neque vel massa </p>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="col-sm-11">
+							<div class="main-image">
+								<img src="/ness/img/ness_1.jpg" class="img-responsive">
+							</div>
+						</div>
+
+						<div class="blue-box">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisi, vulputate ac ullamcorper et, facilisis
+							nec risus. In quis neque vel massa
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="main"></div>
+		</div>
+		</div>
+
+	</section>
+
+	<section class="features-list" id="features">
+			<div class="container">
+				<div class="row">
+
+
+                        {% for post in site.posts %}	
+                        <div class="col-md-6 features-title wp1">
+                                <div class="icon"><img src="/ness/img/molecules.svg" class="img-responsive"></div>
+                                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                                <em>{{ post.date | date: "%B %e, %Y" }} - {{ post.categories }} </em>
+                                <p>
+                                        {{ post.introduction }}</p>
+                            </div>
+                                  {% endfor %}	
+
+	
+				</div>
+			</div>
+		</section>
+	
+	<section class="features-list bottom" id="features2">
+		<div class="container">
+			<div class="row">
+			
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<section class="features-list image" id="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="col-sm-11 pull-right">
+						<div class="main-image">
+							<img src="/ness/img/ness_2.jpg" class="img-responsive">
+						</div>
+					</div>
+
+					<div class="blue-box">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisi, vulputate ac ullamcorper et,
+							facilisis nec risus. In quis neque vel massa iaculis bibendum sit amet mattis tortor. Suspendisse ultricies arcu
+							odio, quis auctor dolor iaculis et. Morbi venenatis facilisis fermentum.</p>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="screenshots" id="screenshots">
+		<div class="container-fluid">
+
+
+		</div>
+	</section>
+	<section class="footer" id="request">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 text-left wp4">
+
+
+					<div id="contact">
+
+
+						<div id="message"></div>
+
+						<form method="post" action="contatto.php" class="contact-form" name="contactform" id="contactform">
+
+							<div class="form-group">
+								<input name="name" type="text" id="name" size="30" placeholder="Nome" class="form-control" value="" />
+							</div>
+
+
+							<div class="form-group">
+								<input name="email" type="text" id="email" size="30" placeholder="Email" class="form-control" value="" />
+							</div>
+
+							<div class="form-group">
+								<input name="phone" type="text" id="phone" size="30" placeholder="Telefono" class="form-control" value="" />
+							</div>
+
+							<div class="form-group">
+								<input name="subject" id="subject" type="text" size="30" placeholder="Oggetto" class="form-control" value="" />
+							</div>
+
+
+
+							<div class="form-group">
+								<textarea name="comments" id="comments" placeholder="Messaggio" class="form-control" rows="8"></textarea>
+							</div>
+
+
+
+							<div class="form-group">
+								<input type="checkbox" class="checkbox" name="agree" id="agree"><strong>PRIVACY</strong><br>CONSENSO AL
+								TRATTAMENTO DEI DATI PERSONALI Preso atto di quanto sopra, autorizzo espressamente il trattamento e la
+								comunicazione dei miei dati, nei modi e per le finalità sopra descritte. Attenzione: in caso di mancata
+								autorizzazione al trattamento dei Suoi dati, la registrazione non verrà effettuata. <a href="https://ness.it/%3C?php%20echo%20base_url();%20?%3Eprivacy">leggi
+									la privacy</a>
+
+							</div>
+
+
+
+
+							<div class="clearfix"></div><br>
+							<input type="submit" class="btn use-btn btn-block" id="submit" value="Invia richiesta" />
+
+						</form>
+
+
+					</div>
+				</div>
+
+
+				<div class="col-md-5 text-left wp4 col-md-offset-1">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisi, vulputate ac ullamcorper et, facilisis
+						nec risus. In quis neque vel massa iaculis bibendum sit amet mattis tortor. Suspendisse ultricies arcu odio, quis
+						auctor dolor iaculis et. Morbi venenatis facilisis fermentum.</p>
+					<br>
+					<a href="atto.pdf" target="_blank" class="btn btn-outline">Visualizza ATTO COSTITUTIVO (pdf)</a>
+
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisi, vulputate ac ullamcorper et, facilisis
+						nec risus. In quis neque vel massa iaculis bibendum sit amet mattis tortor. Suspendisse ultricies arcu odio, quis
+						auctor dolor iaculis et. Morbi venenatis facilisis fermentum.</p>
+
+				</div>
+
+			</div>
+		</div>
+	</footer>
+	<div class="overlay overlay-boxify">
+		<div class="container">
+			<div class="col-md-6 col-md-offset-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa nisi, vulputate ac ullamcorper et, facilisis
+					nec risus. In quis neque vel massa iaculis bibendum sit amet mattis tortor. Suspendisse ultricies arcu odio, quis
+					auctor dolor iaculis et. Morbi venenatis facilisis fermentum.</p>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="/ness/js/min/toucheffects-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="/ness/js/flickity.pkgd.min.js"></script>
+	<script src="/ness/js/jquery.fancybox.pack.js"></script>
+
+	<script src="/ness/js/waypoints.min.js"></script>
+	<script src="/ness/js/bootstrap.min.js"></script>
+	<script src="/ness/js/min/scripts-min.js"></script>
+	<script type="text/javascript" src="/ness/js/jquery.jigowatt.js"></script><!-- AJAX Form Submit -->
+	<script src="/ness/js/particles.min.js"></script>
+
+
+<script>
+	
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 200,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+    },
+    "opacity": {
+      "value": 0,
+      "random": false
+    },
+    "size": {
+      "value": 2,
+      "random": false,
+      "anim": {
+        "enable": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "opacity": 0.2
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    },
+    "modes": {
+      "bubble": {
+        "distance": 200,
+        "size": 2,
+        "duration": 2,
+        "opacity": 1,
+        "speed": 3
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+    
+	</script>
+</body>
+
+</html>
+
