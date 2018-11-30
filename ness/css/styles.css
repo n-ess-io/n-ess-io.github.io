@@ -44,7 +44,7 @@
     z-index: 100;
     top: 0px;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -111,7 +111,13 @@ a:active, a:hover {
     text-decoration: none;
 }
 
+a {
+    color: #313a5a !important;
+}
 
+em {
+color: #10d775;
+}
 
 h1 {
     margin: 0.67em 0;
@@ -373,7 +379,7 @@ a:hover, a:focus {
     border-radius: 3px;
     background-color: transparent;
 	border: 1px solid #bbb;
-    color: #FFF;
+    color: #FFF !important;
 	border-radius: 6px;
     font-size: 14px;
     font-weight: 600;
@@ -461,7 +467,7 @@ a:hover, a:focus {
 
 .nav-toggle {
     position: absolute;
-    top: 10px;
+    top: 16px;
     right: 15px;
     z-index: 999999;
     padding: 10px 35px 16px 0px;
@@ -528,11 +534,9 @@ margin-bottom: 30px;
 
 .hero {
 position: relative;
-    padding: 0px 0px 60px 0px;
+    padding: 0px 0px 0px 0px;
     color: #fff;
-
-	margin-bottom: 10px;
-
+	margin-bottom: 0px;
 }
 
 .hero::before {
@@ -541,15 +545,15 @@ position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 900px;
-    background-color: #172d48;
-    background: linear-gradient(45deg, #172d48, #313a5a, #626e98);
+    height: 750px;
+    background-color: #313a5a;
+    background: linear-gradient(25deg, #313a5a, #313a5a, #313a5a);
     -webkit-transform-origin: 0;
     color: #fff;
 
     transform-origin: 0;
-    -webkit-transform: skewY(-9deg);
-    transform: skewY(-9deg);
+    -webkit-transform: skewY(-6deg);
+    transform: skewY(-6deg);
 }
 
 .logo {
@@ -566,8 +570,8 @@ margin-top: -17px;
 .hero h1 {
     margin: 70px 0 35px 0;
     font-weight: 600;
-    font-size: 144px;
-	line-height: 128px;
+    font-size: 104px;
+	line-height: 102px;
     color: #FFF;
 }
 .hero h1 span {
@@ -575,14 +579,17 @@ margin-top: -17px;
     font-weight: 600;
 }
 
+.hero h1 span.green-point {
+   color: #10d775;
+}
+
 .hero p {
     margin: 0px 0 35px 0;
     font-weight: 300;
     font-size: 25px;
 	line-height: 35px;
-	padding-right: 130px;
-        color: #FFF;
-    width: 90%;
+    color: #FFF;
+    width: 100%;
 }
 
 .hero .blue-box {
@@ -603,7 +610,7 @@ margin-top: -17px;
 }
 .hero {
     width: 100%;
-    height: 100%;
+    min-height: 750px;
 }
 header i {
     margin-left: 5px
@@ -615,8 +622,8 @@ header i {
     position: relative;
         padding: 0px 0px 0px 0px;
         color: #fff;
-    
-        margin-bottom: 10px;
+        min-height: 460px;
+        margin-bottom: 0px;
     
     }
     
@@ -626,9 +633,9 @@ header i {
         top: 0;
         left: 0;
         width: 100%;
-        height: 600px;
-        background-color: #172d48;
-        background: linear-gradient(45deg, #172d48, #313a5a, #626e98);
+        height: 460px;
+        background-color: #313a5a;
+        background: linear-gradient(25deg, #313a5a, #313a5a, #313a5a);
         -webkit-transform-origin: 0;
         color: #fff;
     
@@ -645,10 +652,10 @@ header i {
     
     
     .hero-post h1 {
-        margin: 70px 0 2px 0;
+        margin: 40px 0px 10px 0px;
         font-weight: 600;
-        font-size: 60px;
-        line-height: 68px;
+        font-size: 50px;
+        line-height: 58px;
         color: #FFF;
     }
     .hero-post h1 span {
@@ -681,7 +688,7 @@ header i {
     }
 
     .blog-content-list {
-        padding: 20px 0 80px 0px;
+        padding: 80px 0 80px 0px;
         position: relative;
     }
     
@@ -720,7 +727,7 @@ header i {
     
     .blog-content-list .blue-box {
         position: absolute;
-        bottom: 60px;
+        bottom: 40px;
         background-color: #10d775;
         padding: 30px;
         font-size: 18px;
@@ -764,7 +771,7 @@ header i {
     .blog-content-list h1 {
         margin: 0 0 10px 0;
         padding: 0;
-        color: #333333;
+        color: #313a5a;
         font-size: 20px;
     }
     .blog-content-list p {
@@ -778,7 +785,7 @@ header i {
 Features List
 ========================================================================== */
 .features-list {
-    padding: 30px 0 30px 0px;
+    padding: 50px 0 60px 0px;
 	position: relative;
 }
 
@@ -803,8 +810,8 @@ Features List
     left: 0;
     width: 100%;
     height: 400px;
-    background-color: #172d48;
-    background: linear-gradient(45deg, #172d48, #172d48, #172d48);
+    background-color: #313a5a;
+    background: linear-gradient(45deg, #313a5a, #313a5a, #313a5a);
     -webkit-transform-origin: 0;
     color: #fff;
 
@@ -860,7 +867,7 @@ Features List
 .features-list h1 {
     margin: 0 0 10px 0;
     padding: 0;
-    color: #333333;
+    color: #313a5a;
     font-size: 20px;
 }
 .features-list p {
@@ -968,8 +975,8 @@ Showcase
 
 .footer {
     padding: 120px 0;
-    background-color: #172d48;
-    background: linear-gradient(45deg, #172d48, #172d48, #172d48);
+    background-color: #313a5a;
+    background: linear-gradient(45deg, #313a5a, #313a5a, #313a5a);
     color: #FFF;
 
 }
