@@ -1,0 +1,180 @@
+
+
+@media screen and (max-width: 600px) {
+
+    .menu {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .container-fluid {
+      padding: 0px !important;
+    }
+  
+    .hidden-nav {
+        display: none !important;
+        visibility: hidden !important;
+
+    }
+
+    .modal-dialog {
+       max-width: 600px !important;
+    }
+
+    .sidenav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .main {
+        margin-left: 0px !important;
+    }
+
+
+    .login {
+        background-color: @white;
+
+        .image-wrapper {
+            max-height: 150px;
+        }
+
+    .login-page {
+        height: auto;
+        background-color: @white;
+    
+      
+        .login-content {
+            background-color: @white;
+            border-radius: 4px;
+            padding: 14% 20px 20px;
+            max-width: 400px;
+            margin: 0 auto;
+    
+            .logo-wrapper {
+                height: 90px;
+                margin: 0 auto;
+                text-align: center;
+    
+                img {
+                    margin: 0 auto;
+                }
+            }
+    
+            .btn-blue {
+                background-color: @blue_si;
+            }
+    
+            .input-group {
+    
+                -webkit-transition: all 0.3s linear;
+                -moz-transition: all 0.3s linear;
+                -ms-transition: all 0.3s linear;
+                -o-transition: all 0.3s linear;
+                transition: all 0.3s linear;
+                border: 1px solid @white;
+    
+                &:hover {}
+    
+                .input-group-addon {
+                    background-color: transparent;
+    
+                    i {
+                        font-size: 20px;
+                        color: @darkblue_color;
+                        line-height: 20px;
+                    }
+                }
+    
+                input {
+    
+                    &.form-control {
+                        padding: 10px;
+                        height: auto;
+                        box-shadow: none;
+                        border-color: fade(@bluegrey, 30%);
+                        font-size: 15px;
+                        color: @bluegrey;
+                        font-weight: 600;
+    
+    
+    
+    
+                    }
+                }
+    
+                textarea {
+    
+                    &.form-control {
+                        padding: 10px;
+                        height: auto;
+                        box-shadow: none;
+                        border-color: fade(@bluegrey, 30%);
+                        font-size: 15px;
+                        color: @bluegrey;
+                        font-weight: 600;
+                    }
+    
+                }
+    
+            }
+    
+    
+    
+            p {
+                &.forgot-password {
+                    font-weight: 600;
+                }
+            }
+    
+        }
+        }
+    
+    }
+  }
+
+
+  @media screen and (max-width: 425px) {
+
+    .hidden-nav {
+        display: none !important;
+        visibility: hidden !important;
+
+    }
+    
+    .container-fluid {
+      padding: 0px !important;
+    }
+  
+
+    .modal-dialog {
+       width: 80% !important;
+    }
+
+    .sidenav {
+        display: none;
+        visibility: hidden;
+    }
+
+    
+    .main {
+        margin-left: 0px !important;
+    }
+
+
+    .main .main-content .white-box .item-wrapper .item .title {
+        font-size: 16px !important;
+        
+    }
+
+    .overlay {
+        display: none;
+        visibility: hidden;
+    }
+  }
+
+
+
+  @media (min-width: 992px) {
+.container {
+    width: 1080px;
+}
+  }

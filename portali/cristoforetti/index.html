@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portale Cristoforetti</title>
+  <base href="/portali/cristoforetti/">
+
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+<script type='text/javascript'>//<![CDATA[
+  $(window).on('load', function() {
+      $(document).ready(function() {
+        //Initiate equalize on load
+        equalize();
+      });
+  
+      //Equalize on resizing of window
+      $(window).resize(function() {
+        removeHeights();
+        equalize();
+      });
+  
+      function equalize(){
+  
+        $(".container .row.equal").each(function() {
+          var heights = $(this).find(".white-box").map(function() {
+            return $(this).height();
+          }).get(),
+  
+          maxHeight = Math.max.apply(null, heights);
+  
+          $(this).find(".white-box").height(maxHeight);
+  
+        });
+      }
+  
+      function removeHeights(){
+  
+        $(".container .row.equal").each(function() {
+  
+          $(this).find(".white-box").height("auto");
+  
+        });
+      }
+  
+  });//]]>
+  
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+</head>
+<body>
+  
+  <app-root></app-root>
+
+  
+
+<script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="scripts.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
+</html>

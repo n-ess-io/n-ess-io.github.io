@@ -1,0 +1,124 @@
+
+/* start modale */
+
+
+//@import "primeng.less";
+
+
+@white: #FFFFFF;
+@lightgrey: #F6F6F9;
+@lightgrey2: #D4D8DF;
+
+@blue: #0D5FA7;
+@bluegrey: #232F5D;
+@violet: #232F5D;
+@yellow: #232F5D;
+
+@bluegrey2: #232F5D;
+@body_bg: #F2F5F8;
+@sidebar_color: #232F5D;
+@red: #FF6A6B;
+/* SO COLORI */
+@darkblue_color: #232F5D;
+@blue_si: #548FD1;
+@grey_so: #9EBAD0;
+@lightblue_si: #548FD1;
+@green_so: #97BE0D;
+@green: #44C455;
+@lightblue: #548FD1;
+@grey: #9B9B9B;
+
+
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+
+.modal-dialog {
+max-width: 700px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal-header {
+    background-color: @darkblue_color;
+    border-radius: 3px 3px 0px 0px;
+
+    h4 {
+        color: @white;
+        font-weight: 700;
+        font-size: 16px;
+        
+    }
+
+    button.close {
+        color: @white !important;
+    }
+}
+
+.modal-body {
+    padding: 20px;
+    
+    .user {
+        font-size: 15px;
+
+        i {
+            color: @blue_si;
+        }
+    }
+
+    hr {
+        margin: 15px 0px;
+    }
+    .date {
+        font-size: 15px;
+
+        i {
+            color: @blue_si;
+        }
+    }
+
+    .btn-send {
+        background-color: @violet;
+        padding: 6px 20px;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 600;
+        
+    }
+    
+    .btn-attachment {
+        background-color: @white;
+        border: 1px solid @blue;
+        padding: 6px 10px 6px 20px;
+        color: @blue;
+        font-size: 16px;
+        font-weight: 600;
+        
+        
+    }
+    
+    textarea.form-control {
+        height: 150px;
+    }
+    
+    .well {
+        background-color: fade(@lightgrey2,30%);
+        box-shadow: none;
+        border: 0px;
+    }
+}
